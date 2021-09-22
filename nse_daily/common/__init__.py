@@ -4,7 +4,7 @@ import sys, linecache
 
 
 # Function to get exception from stack
-def get_exception(debug:bool = True):
+def _get_exception(debug:bool = True):
     # print 'In # print exception'
     exc_type, exc_obj, tb = sys.exc_info()
     f = tb.tb_frame
@@ -21,7 +21,7 @@ def get_exception(debug:bool = True):
     return err_obj
 
 #Function to create user defined exception object
-def errorify(error_code='',error_msg='',error_at=''):
+def _errorify(error_code='', error_msg='', error_at=''):
     error_obj = {
         'error_code':error_code,
         'error_message':error_msg,

@@ -16,9 +16,9 @@ setup(
     url = "https://github.com/v33rh0ra/get_nse_daily",#project home page from github
     download_url = 'https://github.com/v33rh0ra/get_nse_daily/archive/v_01.tar.gz',
     project_urls={
-        "Documentation":"",
-        "Bug Tracker":"",
-        "Source Code":"",
+        "Documentation":"https://get_nse_daily.github.io/",
+        "Bug Tracker":"https://github.com/v33rh0ra/get_nse_daily/issues",
+        "Source Code":"https://github.com/v33rh0ra/get_nse_daily",
     },
     classifiers=[
         "Operating System :: OS Independent",

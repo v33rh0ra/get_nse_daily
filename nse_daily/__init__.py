@@ -9,7 +9,7 @@ from pathlib import Path
 from requests.adapters import HTTPAdapter
 from requests.packages.urllib3 import Retry
 
-from .common import get_exception
+from .common import _get_exception
 
 from multiprocessing.pool import ThreadPool
 
@@ -84,7 +84,7 @@ class NSEDaily(object):
             file_date = datetime.strptime(date_str,date_format)
             return self._download_by_date(file_date)
         except:
-            e = get_exception()
+            e = _get_exception()
             raise Exception(e)
 
     def download_by_date_range(self, date_start:str,date_end:str,date_format:Optional[str]='%Y%m%d',num_workers:Optional[int]=1):
@@ -96,5 +96,5 @@ class NSEDaily(object):
             l_e = tpool.map(self._download_by_date,l_dates)
             return l_e
         except:
-            e = get_exception()
+            e = _get_exception()
             raise Exception(e)
