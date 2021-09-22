@@ -2,11 +2,11 @@
 # get_nse_daily
 # ============
 ### _pure python library built using requests to get daily day end data from nse india_
-[**Project website**](https://v33rh0ra.github.io/get_nse_daily/)
+[**Project website**](https://v33rh0ra.github.io/get_nse_daily/nse_daily/index.html)
 
 [Documentation]
 
-[Documentation]: https://v33rh0ra.github.io/get_nse_daily/
+[Documentation]: https://v33rh0ra.github.io/get_nse_daily/nse_daily/index.html
 
 Installation
 ------------
