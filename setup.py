@@ -20,7 +20,7 @@ setup(
         'requests>=2.26.0'
     ],
     url = "https://github.com/v33rh0ra/get_nse_daily",#project home page from github
-    download_url = 'https://github.com/v33rh0ra/get_nse_daily/archive/v_01.tar.gz',
+    download_url = 'https://github.com/v33rh0ra/get_nse_daily/archive/v_02.tar.gz',
     project_urls={
         "Documentation":"https://v33rh0ra.github.io/get_nse_daily/nse_daily/index.html",
         "Bug Tracker":"https://github.com/v33rh0ra/get_nse_daily/issues",
