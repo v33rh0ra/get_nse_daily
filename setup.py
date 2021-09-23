@@ -1,14 +1,20 @@
 from setuptools import setup, find_packages
 print("Packages found:",find_packages())
+# read the contents of your README file
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name = "get_nse_daily",
-    version="0.1",
+    version="0.2",
     packages=find_packages(),
     author="Tanveer Hora",
     author_email = 'tanveer.hora@gmail.com',
     license='MIT',
     description="pure python library built using requests to get daily day end data from nse india",
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     keywords = "nse,bhavcopy,bhav",
     install_requires = [
         'requests>=2.26.0'
