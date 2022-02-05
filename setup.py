@@ -7,7 +7,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name = "get_nse_daily",
-    version="0.2",
+    version="0.3",
     packages=find_packages(),
     author="Tanveer Hora",
     author_email = 'tanveer.hora@gmail.com',
@@ -17,10 +17,12 @@ setup(
     long_description_content_type='text/markdown',
     keywords = "nse,bhavcopy,bhav",
     install_requires = [
-        'requests>=2.26.0'
+        'requests>=2.26.0',
+        'numpy>=1.21.5',
+        'fake-useragent>=0.1.11'
     ],
     url = "https://github.com/v33rh0ra/get_nse_daily",#project home page from github
-    download_url = 'https://github.com/v33rh0ra/get_nse_daily/archive/v_02.tar.gz',
+    download_url = 'https://github.com/v33rh0ra/get_nse_daily/archive/v_03.tar.gz',
     project_urls={
         "Documentation":"https://v33rh0ra.github.io/get_nse_daily/nse_daily/index.html",
         "Bug Tracker":"https://github.com/v33rh0ra/get_nse_daily/issues",
