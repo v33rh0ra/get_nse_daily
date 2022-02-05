@@ -1,0 +1,10 @@
+python setup.py sdist
+
+pip install twine
+
+twine upload dist/*
+
+# change the download_url to v_04 and create a new release in github with v_04
+
+# update pdoc
+pdoc --html nse_daily --output-dir docs --force
