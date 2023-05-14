@@ -24,13 +24,15 @@ class NSEDaily(object):
                  file_pattern: Optional[str] = "cm{date_part}bhav.csv.zip",
                  file_date_part_format: Optional[str] = '%d%b%Y',
                  uri_pattern: Optional[
-                     str] = "https://www1.nseindia.com/content/historical/EQUITIES/{yyyy_mon}/{file_name}",
+                     str] = "https://archives.nseindia.com/content/historical/EQUITIES/{yyyy_mon}/{file_name}",
                  uri_yy_mm_format: Optional[str] = '%Y/%b',
                  download_path: Optional[str] = None
                  ):
         """
         NSE Daily bhav copy can be downloaded from the following
             URI: https://www1.nseindia.com/content/historical/EQUITIES/2020/JUN/cm12JUN2020bhav.csv.zip
+            NEW WEBSITE URL
+           URI: https://archives.nseindia.com/content/historical/EQUITIES/2023/MAY/cm11MAY2023bhav.csv.zip
         Parameters are set by default to match the above URI.
         If the URI Changes, please change the parameters below, to avoid breaking of code.
         :param default_date_pattern: The default input date pattern to be used for parsing dates passed to the functions
